@@ -105,7 +105,6 @@ body {
   }
 
   .item-card {
-    margin: 2rem auto;
     grid-template-columns: 1fr;
   }
 
