@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Product preview card component</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="item-card">
+        <div class="item-imgbox">
+          <picture>
+            <source
+              media="(max-width: 36rem)"
+              srcset="images/image-product-mobile.jpg"
+            />
+            <img
+              src="images/image-product-desktop.jpg"
+              alt="Image of Perfume"
+              class="item-img"
+            />
+          </picture>
+        </div>
+        <div class="item-textbox">
+          <p class="item-type">Perfume</p>
+          <p class="item-name">Gabrielle Essence Eau De Parfum</p>
+          <p class="item-description">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <div class="price-box">
+            <p class="item-discounted-price">$149.99</p>
+            <span class="item-real-price">$169.99</span>
+          </div>
+
+          <a href="#" class="btn">
+            <img src="images/icon-cart.svg" alt="icon-cart" />
+            Add to Cart
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Saswata Bhattacharya</a>.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  line-height: 1;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.item-card {
+  max-width: 60rem;
+  margin: 7rem auto;
+  background-color: hsl(0, 0%, 100%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.item-img {
+  width: 100%;
+}
+
+.item-name,
+.item-discounted-price {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 3.4rem;
+}
+
+.item-type,
+.item-description {
+  color: hsl(228, 12%, 48%);
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+.item-type {
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+.item-textbox {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  justify-content: space-around;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(158, 36%, 37%);
+  font-size: 1.4rem;
+  padding: 1.3rem;
+  text-align: center;
+  border-radius: 0.6rem;
+  font-weight: 700;
+}
+
+.item-discounted-price {
+  color: hsl(158, 36%, 37%);
+}
+
+.price-box {
+  display: flex;
+  gap: 2rem;
+}
+
+.item-real-price {
+  align-self: center;
+  color: hsl(228, 12%, 48%);
+  font-size: 1.25rem;
+  text-decoration: line-through;
+}
+
+.attribution {
+  font-size: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 36rem) {
+  html {
+    font-size: 50%;
+  }
+
+  .item-card {
+    margin: 2rem auto;
+    grid-template-columns: 1fr;
+  }
+
+  .item-textbox {
+    gap: 2rem;
+  }
+}
